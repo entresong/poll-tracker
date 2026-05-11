@@ -6,7 +6,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: '2026 지방선거 17개 시도 후보 지지율 한눈에',
   description:
-    '2026년 6월 3일 제9회 전국동시지방선거. 17개 시도 광역단체장 후보별 지지율을 격자에서 한눈에 확인하세요.',
+    '2026년 6월 3일 제9회 전국동시지방선거. 광역·기초자치단체장 후보별 지지율을 격자에서 한눈에 확인하세요.',
 };
 
 export default function Home() {
@@ -27,8 +27,9 @@ export default function Home() {
             지방선거 광역단체장
           </h1>
           <p className="mt-3 max-w-2xl text-sm text-stone-600 md:text-base">
-            격자에서 지역을 클릭하면 모든 후보의 최신 지지율과 조사 정보를
-            확인할 수 있습니다. 색상은 1위 후보의 정당입니다.
+            격자에서 지역을 클릭하면 광역단체장·기초자치단체장(일부 시군구
+            샘플) 정보와 최신 지지율을 확인할 수 있습니다. 색상은 광역 1위
+            후보의 정당입니다.
           </p>
           <p className="mt-2 text-xs text-stone-500">
             등록된 조사 {surveyedCount}곳 · 후보 확정 진행 중 {candidatesPending}곳 ·{' '}
@@ -50,7 +51,9 @@ export default function Home() {
           <div className="grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-4">
             {regions.map((r) => {
               const latest = r.surveys[0];
-              const top = latest?.candidates.sort((a, b) => b.rating - a.rating)[0];
+              const top = latest
+                ? [...latest.candidates].sort((a, b) => b.rating - a.rating)[0]
+                : undefined;
 
               return (
                 <Link
@@ -60,6 +63,11 @@ export default function Home() {
                 >
                   <p className="font-serif text-base font-bold">{r.name}</p>
                   <p className="text-xs text-stone-500">{r.position}</p>
+                  {r.municipalities.length > 0 && (
+                    <p className="mt-1 text-[10px] text-stone-400">
+                      기초자치단체 샘플 {r.municipalities.length}곳
+                    </p>
+                  )}
 
                   {top ? (
                     <div className="mt-3 border-t border-stone-100 pt-3">

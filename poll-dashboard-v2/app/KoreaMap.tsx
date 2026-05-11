@@ -1,8 +1,14 @@
 'use client';
 
 import Link from 'next/link';
-import { useEffect, useMemo, useState } from 'react';
-import { Region, PARTY_COLORS, formatMethod } from '@/lib/data';
+import { useEffect, useMemo, useState, type ReactNode } from 'react';
+import {
+  Region,
+  Municipality,
+  LocalSurvey,
+  PARTY_COLORS,
+  formatMethod,
+} from '@/lib/data';
 
 const GRID_ROWS = 4;
 const GRID_COLS = 6;
@@ -32,8 +38,12 @@ function useRegionIndex(regions: Region[]) {
 }
 
 function getTopCandidate(region: Region) {
-  const latest = region.surveys[0] ?? null;
-  if (!latest) return { latest: null as Region['surveys'][0] | null, top: null };
+  return getLatestTopFromSurveys(region.surveys);
+}
+
+function getLatestTopFromSurveys(surveys: LocalSurvey[]) {
+  const latest = surveys[0] ?? null;
+  if (!latest) return { latest: null as LocalSurvey | null, top: null };
   const top = [...latest.candidates].sort((a, b) => b.rating - a.rating)[0];
   return { latest, top };
 }
@@ -231,6 +241,155 @@ function CandidateStrip({
   );
 }
 
+function SectionTitle({ children }: { children: ReactNode }) {
+  return (
+    <h4 className="border-b border-stone-200 pb-1 font-serif text-[10px] font-bold uppercase tracking-wider text-stone-500 max-md:mb-1.5 md:mb-2 md:text-xs">
+      {children}
+    </h4>
+  );
+}
+
+function MunicipalityCard({
+  m,
+  compact,
+}: {
+  m: Municipality;
+  compact?: boolean;
+}) {
+  const { latest, top } = getLatestTopFromSurveys(m.surveys);
+
+  return (
+    <div
+      className={`rounded-md border border-stone-200 bg-white transition-colors hover:border-stone-400 ${
+        compact ? 'p-1.5' : 'p-3'
+      }`}
+    >
+      <p className={`font-serif font-bold text-stone-900 ${compact ? 'text-xs' : 'text-sm'}`}>
+        {m.name}
+      </p>
+      <p className={`text-stone-500 ${compact ? 'text-[10px]' : 'text-xs'}`}>{m.position}</p>
+      {top && latest ? (
+        <div className={compact ? 'mt-1' : 'mt-2'}>
+          <p
+            className={`font-medium ${compact ? 'text-[11px]' : 'text-sm'}`}
+            style={{ color: PARTY_COLORS[top.party] || '#44403c' }}
+          >
+            {top.name}
+            <span className="ml-1 font-serif font-bold tabular-nums text-stone-900">
+              {top.rating}
+              <span className="font-normal text-stone-500">%</span>
+            </span>
+          </p>
+          <p className={`text-stone-600 ${compact ? 'text-[10px]' : 'text-xs'}`}>{top.party}</p>
+        </div>
+      ) : (
+        <p className={`mt-1.5 text-stone-500 ${compact ? 'text-[10px]' : 'text-xs'}`}>
+          {m.status === 'candidates_pending' ? '🗳 ' : ''}
+          {m.statusMessage ?? '등록된 조사 없음'}
+        </p>
+      )}
+    </div>
+  );
+}
+
+function MunicipalitiesSection({
+  municipalities,
+  compact,
+}: {
+  municipalities: Municipality[];
+  compact?: boolean;
+}) {
+  if (municipalities.length === 0) return null;
+  return (
+    <section className={compact ? 'mt-2' : 'mt-5'}>
+      <SectionTitle>기초자치단체장</SectionTitle>
+      <div
+        className={`mt-2 grid gap-1.5 md:gap-2 ${
+          compact ? 'grid-cols-2' : 'sm:grid-cols-2'
+        }`}
+      >
+        {municipalities.map((m) => (
+          <MunicipalityCard key={m.code} m={m} compact={compact} />
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function MetropolitanSection({
+  region,
+  latest,
+  compact,
+}: {
+  region: Region;
+  latest: LocalSurvey | null;
+  compact?: boolean;
+}) {
+  return (
+    <section>
+      <SectionTitle>광역단체장</SectionTitle>
+      <div className={compact ? 'mt-1.5' : 'mt-2'}>
+        {!latest ? (
+          <NoSurveyBlock region={region} compact={compact} />
+        ) : (
+          <>
+            <p
+              className={
+                compact
+                  ? 'truncate text-[10px] text-stone-500'
+                  : 'mb-3 text-xs text-stone-500'
+              }
+            >
+              {latest.agency}
+              {latest.client && ` · ${latest.client}`} · {latest.startDate} ~ {latest.endDate}
+            </p>
+            <div className={compact ? 'flex flex-col gap-1' : 'flex flex-col gap-2'}>
+              {[...latest.candidates]
+                .sort((a, b) => b.rating - a.rating)
+                .map((c) => (
+                  <CandidateStrip
+                    key={c.name}
+                    name={c.name}
+                    party={c.party}
+                    rating={c.rating}
+                  />
+                ))}
+            </div>
+            {!compact && (
+              <details className="mt-4 text-xs text-stone-600">
+                <summary className="cursor-pointer text-stone-500 underline underline-offset-2">
+                  조사 개요
+                </summary>
+                <dl className="mt-2 space-y-1">
+                  <Row label="표본수" value={`${latest.sampleSize.toLocaleString()}명`} />
+                  {latest.responseRate != null && (
+                    <Row label="응답률" value={`${latest.responseRate}%`} />
+                  )}
+                  <Row
+                    label="표본오차"
+                    value={`±${latest.marginOfError}%p (95% 신뢰수준)`}
+                  />
+                  <Row label="조사방법" value={formatMethod(latest.method)} />
+                </dl>
+              </details>
+            )}
+            <Link
+              href={`/local/${region.code}`}
+              className={
+                compact
+                  ? 'mt-1.5 block rounded border border-stone-900 bg-stone-900 py-1.5 text-center text-xs text-white transition-colors hover:bg-stone-800'
+                  : 'mt-4 block w-full rounded border border-stone-900 bg-stone-900 px-4 py-2 text-center text-sm text-white transition-colors hover:bg-stone-800'
+              }
+            >
+              자세히 보기 →
+            </Link>
+          </>
+        )}
+      </div>
+    </section>
+  );
+}
+
 function EmptyPanel() {
   return (
     <div className="flex h-full min-h-[280px] flex-col items-center justify-center rounded-lg border-2 border-dashed border-stone-300 bg-white p-6 text-center transition-opacity duration-300">
@@ -258,7 +417,7 @@ function MobileDetailPanel({
   const { region, latest } = data;
 
   return (
-    <div className="flex min-h-0 flex-col gap-1.5 rounded-lg border-2 border-stone-300 bg-white p-2 transition-opacity duration-300 ease-out max-md:overflow-hidden">
+    <div className="flex min-h-0 max-h-[min(52vh,420px)] flex-col gap-1.5 rounded-lg border-2 border-stone-300 bg-white p-2 transition-opacity duration-300 ease-out max-md:overflow-hidden">
       <div className="shrink-0 border-b border-stone-200 pb-1.5">
         <p className="text-[10px] text-stone-500">{region.position}</p>
         <h3 className="font-serif text-base font-bold leading-tight text-stone-900">
@@ -266,35 +425,9 @@ function MobileDetailPanel({
         </h3>
       </div>
 
-      <div className="min-h-0 flex-1 space-y-1 overflow-hidden">
-        {!latest ? (
-          <NoSurveyBlock region={region} compact />
-        ) : (
-          <>
-            <p className="truncate text-[10px] text-stone-500">
-              {latest.agency}
-              {latest.client && ` · ${latest.client}`} · {latest.startDate} ~ {latest.endDate}
-            </p>
-            <div className="flex flex-col gap-1">
-              {[...latest.candidates]
-                .sort((a, b) => b.rating - a.rating)
-                .map((c) => (
-                  <CandidateStrip
-                    key={c.name}
-                    name={c.name}
-                    party={c.party}
-                    rating={c.rating}
-                  />
-                ))}
-            </div>
-            <Link
-              href={`/local/${region.code}`}
-              className="mt-1 block rounded border border-stone-900 bg-stone-900 py-1.5 text-center text-xs text-white transition-colors hover:bg-stone-800"
-            >
-              자세히 보기 →
-            </Link>
-          </>
-        )}
+      <div className="min-h-0 flex-1 space-y-3 overflow-y-auto overflow-x-hidden pr-0.5">
+        <MetropolitanSection region={region} latest={latest} compact />
+        <MunicipalitiesSection municipalities={region.municipalities} compact />
       </div>
     </div>
   );
@@ -330,54 +463,9 @@ function DesktopDetailPanel({
         </button>
       </div>
 
-      <div className="p-4">
-        {!latest ? (
-          <NoSurveyBlock region={region} />
-        ) : (
-          <>
-            <p className="mb-3 text-xs text-stone-500">
-              {latest.agency}
-              {latest.client && ` · ${latest.client}`} · {latest.startDate} ~ {latest.endDate}
-            </p>
-
-            <div className="flex flex-col gap-2">
-              {[...latest.candidates]
-                .sort((a, b) => b.rating - a.rating)
-                .map((c) => (
-                  <CandidateStrip
-                    key={c.name}
-                    name={c.name}
-                    party={c.party}
-                    rating={c.rating}
-                  />
-                ))}
-            </div>
-
-            <details className="mt-4 text-xs text-stone-600">
-              <summary className="cursor-pointer text-stone-500 underline underline-offset-2">
-                조사 개요
-              </summary>
-              <dl className="mt-2 space-y-1">
-                <Row label="표본수" value={`${latest.sampleSize.toLocaleString()}명`} />
-                {latest.responseRate != null && (
-                  <Row label="응답률" value={`${latest.responseRate}%`} />
-                )}
-                <Row
-                  label="표본오차"
-                  value={`±${latest.marginOfError}%p (95% 신뢰수준)`}
-                />
-                <Row label="조사방법" value={formatMethod(latest.method)} />
-              </dl>
-            </details>
-
-            <Link
-              href={`/local/${region.code}`}
-              className="mt-4 block w-full rounded border border-stone-900 bg-stone-900 px-4 py-2 text-center text-sm text-white transition-colors hover:bg-stone-800"
-            >
-              자세히 보기 →
-            </Link>
-          </>
-        )}
+      <div className="max-h-[min(78vh,calc(100vh-8rem))] space-y-1 overflow-y-auto overflow-x-hidden p-4">
+        <MetropolitanSection region={region} latest={latest} />
+        <MunicipalitiesSection municipalities={region.municipalities} />
       </div>
     </div>
   );

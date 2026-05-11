@@ -1,5 +1,5 @@
 {
-  "_note": "17개 시도 광역단체장 선거 데이터. 2026년 4-5월 공표 여론조사 기준",
+  "_note": "17개 시도 광역단체장 + 일부 시군구 기초자치단체장(municipalities). 2026년 4-5월 공표 여론조사 기준",
   "_lastUpdated": "2026-05-11",
   "_electionDate": "2026-06-03",
   "_sources": "한국갤럽-세계일보 4월 조사, 스트레이트뉴스-조원씨앤아이 5월 조사, 부산일보-에이스리서치, 여론조사꽃 등. 자세한 사항은 NESDC(nesdc.go.kr) 참조.",
@@ -41,6 +41,56 @@
             { "name": "오세훈", "party": "국민의힘", "rating": 35.9 }
           ]
         }
+      ],
+      "municipalities": [
+        {
+          "code": "seoul-gangnam",
+          "name": "강남구",
+          "position": "강남구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "seoul-songpa",
+          "name": "송파구",
+          "position": "송파구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "seoul-seocho",
+          "name": "서초구",
+          "position": "서초구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "seoul-mapo",
+          "name": "마포구",
+          "position": "마포구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "seoul-yongsan",
+          "name": "용산구",
+          "position": "용산구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "seoul-yangcheon",
+          "name": "양천구",
+          "position": "양천구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        }
       ]
     },
     {
@@ -64,6 +114,24 @@
             { "name": "전재수", "party": "더불어민주당", "rating": 48.0 },
             { "name": "박형준", "party": "국민의힘", "rating": 34.9 }
           ]
+        }
+      ],
+      "municipalities": [
+        {
+          "code": "busan-haeundae",
+          "name": "해운대구",
+          "position": "해운대구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "busan-suyeong",
+          "name": "수영구",
+          "position": "수영구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
         }
       ]
     },
@@ -89,7 +157,8 @@
             { "name": "이진숙", "party": "무소속", "rating": 31.7 }
           ]
         }
-      ]
+      ],
+      "municipalities": []
     },
     {
       "code": "incheon",
@@ -113,7 +182,8 @@
             { "name": "유정복", "party": "국민의힘", "rating": 33.0 }
           ]
         }
-      ]
+      ],
+      "municipalities": []
     },
     {
       "code": "gwangju",
@@ -125,7 +195,8 @@
       "status": "candidates_pending",
       "statusMessage": "민주당 후보 결선 진행 중",
       "statusDetail": "민주당 민형배 의원과 김영록 전남지사가 5월 12-14일 결선 투표 예정. 국민의힘은 안태욱·이정현 후보 출마 선언. 2026년 7월 1일 전남광주통합특별시 출범 예정.",
-      "surveys": []
+      "surveys": [],
+      "municipalities": []
     },
     {
       "code": "daejeon",
@@ -149,7 +220,8 @@
             { "name": "이장우", "party": "국민의힘", "rating": 23.5 }
           ]
         }
-      ]
+      ],
+      "municipalities": []
     },
     {
       "code": "ulsan",
@@ -173,7 +245,8 @@
             { "name": "김두겸", "party": "국민의힘", "rating": 34.9 }
           ]
         }
-      ]
+      ],
+      "municipalities": []
     },
     {
       "code": "sejong",
@@ -185,7 +258,8 @@
       "status": "candidates_pending",
       "statusMessage": "민주당 후보 결선 진행 중",
       "statusDetail": "민주당 이춘희 전 시장과 조상호 전 경제부시장 결선 진출. 국민의힘은 최민호 현 시장 단수 공천.",
-      "surveys": []
+      "surveys": [],
+      "municipalities": []
     },
     {
       "code": "gyeonggi",
@@ -208,6 +282,40 @@
             { "name": "추미애", "party": "더불어민주당", "rating": 56.0 },
             { "name": "양향자", "party": "국민의힘", "rating": 27.0 }
           ]
+        }
+      ],
+      "municipalities": [
+        {
+          "code": "gyeonggi-suwon",
+          "name": "수원시",
+          "position": "수원시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeonggi-yongin",
+          "name": "용인시",
+          "position": "용인시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeonggi-seongnam",
+          "name": "성남시",
+          "position": "성남시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeonggi-hwaseong",
+          "name": "화성시",
+          "position": "화성시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
         }
       ]
     },
@@ -233,7 +341,8 @@
             { "name": "김진태", "party": "국민의힘", "rating": 37.3 }
           ]
         }
-      ]
+      ],
+      "municipalities": []
     },
     {
       "code": "chungbuk",
@@ -245,7 +354,8 @@
       "status": "candidates_pending",
       "statusMessage": "국민의힘 후보 경선 진행 중",
       "statusDetail": "민주당 신용한 지방시대위원회 부위원장 후보 확정. 국민의힘은 윤희근 전 경찰청장·윤갑근 변호사 예비경선 후 김영환 현 지사와 결선 예정.",
-      "surveys": []
+      "surveys": [],
+      "municipalities": []
     },
     {
       "code": "chungnam",
@@ -269,7 +379,8 @@
             { "name": "김태흠", "party": "국민의힘", "rating": 30.9 }
           ]
         }
-      ]
+      ],
+      "municipalities": []
     },
     {
       "code": "jeonbuk",
@@ -281,7 +392,8 @@
       "status": "data_pending",
       "statusMessage": "공표된 조사 없음",
       "statusDetail": "민주당 우세 지역으로 분류되며, 4-5월 중 공표된 양자대결 여론조사가 등록되지 않았습니다. NESDC 등록을 지속 모니터링 중입니다.",
-      "surveys": []
+      "surveys": [],
+      "municipalities": []
     },
     {
       "code": "jeonnam",
@@ -293,7 +405,8 @@
       "status": "candidates_pending",
       "statusMessage": "광주 통합 이슈로 후보 확정 지연",
       "statusDetail": "2026년 7월 1일 전남광주통합특별시 출범 예정. 통합 관련 정치 일정에 따라 후보 확정과 여론조사가 지연되고 있습니다.",
-      "surveys": []
+      "surveys": [],
+      "municipalities": []
     },
     {
       "code": "gyeongbuk",
@@ -305,7 +418,8 @@
       "status": "data_pending",
       "statusMessage": "공표된 조사 없음",
       "statusDetail": "국민의힘 우세 지역으로 분류되며, 4-5월 중 공표된 양자대결 여론조사가 등록되지 않았습니다. NESDC 등록을 지속 모니터링 중입니다.",
-      "surveys": []
+      "surveys": [],
+      "municipalities": []
     },
     {
       "code": "gyeongnam",
@@ -329,7 +443,8 @@
             { "name": "박완수", "party": "국민의힘", "rating": 40.0 }
           ]
         }
-      ]
+      ],
+      "municipalities": []
     },
     {
       "code": "jeju",
@@ -341,7 +456,8 @@
       "status": "candidates_pending",
       "statusMessage": "민주당 후보 결선 진행 중",
       "statusDetail": "민주당 위성곤 의원과 문대림 의원 결선 진출. 국민의힘은 문성유 전 기획재정부 기획조정실장 확정.",
-      "surveys": []
+      "surveys": [],
+      "municipalities": []
     }
   ]
 }

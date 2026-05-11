@@ -35,6 +35,17 @@ export type LocalSurvey = {
   candidates: Candidate[];
 };
 
+/** 시·군·구 기초자치단체장 선거 단위 */
+export type Municipality = {
+  code: string;
+  name: string;
+  position: string;
+  status?: 'candidates_pending' | 'data_pending';
+  statusMessage?: string;
+  statusDetail?: string;
+  surveys: LocalSurvey[];
+};
+
 export type Region = {
   code: string;
   name: string;
@@ -48,6 +59,8 @@ export type Region = {
   statusMessage?: string;
   statusDetail?: string;
   surveys: LocalSurvey[];
+  /** 관할 시·군·구 기초자치단체장 */
+  municipalities: Municipality[];
 };
 
 export const PARTY_COLORS: Record<string, string> = {
