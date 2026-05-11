@@ -5,6 +5,25 @@ import Link from 'next/link';
 import svgData from '@/data/korea-svg-paths.json';
 import { Region, PARTY_COLORS, formatMethod } from '@/lib/data';
 
+/** centroid 밖으로 라벨을 빼고 선으로 연결하는 지역 (면적이 작은 시·도) */
+const LEADER_LABEL: Partial<
+  Record<string, { x: number; y: number }>
+> = {
+  seoul: { x: 186, y: 162 },
+  incheon: { x: 118, y: 148 },
+  sejong: { x: 278, y: 312 },
+  gwangju: { x: 172, y: 452 },
+  daejeon: { x: 308, y: 308 },
+  ulsan: { x: 478, y: 398 },
+};
+
+/** 서울 라벨과 겹치지 않도록 경기 라벨만 centroid에서 살짝 이동 */
+const GYEONGGI_LABEL = { x: 272, y: 156 };
+
+const LABEL_FONT_SIZE = 14;
+const LABEL_STROKE = '#1c1917';
+const LABEL_STROKE_WIDTH = 2.25;
+
 export default function KoreaMap({ regions }: { regions: Region[] }) {
   const [selected, setSelected] = useState<string | null>(null);
   const [hovered, setHovered] = useState<string | null>(null);
@@ -70,6 +89,36 @@ export default function KoreaMap({ regions }: { regions: Region[] }) {
               );
             })}
 
+            {/* 리더선 (라벨보다 아래) */}
+            {svgData.paths.map((p) => {
+              const leader = LEADER_LABEL[p.code];
+              if (!leader) return null;
+              const [cx, cy] = p.centroid;
+              const { x: lx, y: ly } = leader;
+              const dx = lx - cx;
+              const dy = ly - cy;
+              const len = Math.hypot(dx, dy) || 1;
+              const ux = dx / len;
+              const uy = dy / len;
+              const gap = 12;
+              const x2 = lx - ux * gap;
+              const y2 = ly - uy * gap;
+              return (
+                <line
+                  key={`leader-${p.code}`}
+                  x1={cx}
+                  y1={cy}
+                  x2={x2}
+                  y2={y2}
+                  stroke="#78716c"
+                  strokeWidth={1.25}
+                  strokeLinecap="round"
+                  strokeOpacity={0.85}
+                  style={{ pointerEvents: 'none' }}
+                />
+              );
+            })}
+
             {/* 라벨 */}
             {svgData.paths.map((p) => {
               const d = regionData.get(p.code);
@@ -77,21 +126,34 @@ export default function KoreaMap({ regions }: { regions: Region[] }) {
               const region = d?.region;
               const [cx, cy] = p.centroid;
               const shortName = region?.shortName || '';
+              const leader = LEADER_LABEL[p.code];
+              const gyeonggiNudge = p.code === 'gyeonggi';
+              const x = leader
+                ? leader.x
+                : gyeonggiNudge
+                  ? GYEONGGI_LABEL.x
+                  : cx;
+              const y = leader
+                ? leader.y
+                : gyeonggiNudge
+                  ? GYEONGGI_LABEL.y
+                  : cy;
 
               return (
                 <text
                   key={`label-${p.code}`}
-                  x={cx}
-                  y={cy}
+                  x={x}
+                  y={y}
                   textAnchor="middle"
                   dominantBaseline="middle"
-                  fontSize={12}
+                  fontSize={LABEL_FONT_SIZE}
                   fontWeight={700}
-                  fill={top ? '#ffffff' : '#57534e'}
+                  fill={top ? '#ffffff' : '#44403c'}
+                  stroke={LABEL_STROKE}
+                  strokeWidth={LABEL_STROKE_WIDTH}
+                  paintOrder="stroke fill"
+                  strokeLinejoin="round"
                   style={{ pointerEvents: 'none', userSelect: 'none' }}
-                  stroke={top ? 'rgba(0,0,0,0.3)' : 'none'}
-                  strokeWidth={top ? 0.5 : 0}
-                  paintOrder="stroke"
                 >
                   {shortName}
                 </text>
