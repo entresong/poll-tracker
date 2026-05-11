@@ -4,8 +4,8 @@ import Link from 'next/link';
 import { useEffect, useMemo, useState } from 'react';
 import { Region, PARTY_COLORS, formatMethod } from '@/lib/data';
 
-const GRID_ROWS = 6;
-const GRID_COLS = 7;
+const GRID_ROWS = 4;
+const GRID_COLS = 6;
 const NO_SURVEY_BG = '#d6d3d1';
 const MOBILE_DEFAULT_CODE = 'seoul';
 
@@ -125,7 +125,7 @@ function RegionGrid({
 
   return (
     <div
-      className="grid aspect-[7/6] h-full max-h-full w-full max-w-full grid-cols-7 grid-rows-6 gap-1 rounded-lg border-2 border-stone-300 bg-stone-100/80 p-1 transition-[max-height,width,filter] duration-300 ease-out max-md:min-h-0 md:h-auto md:max-h-none md:gap-1.5 md:p-1.5"
+      className="grid aspect-[6/4] h-full max-h-full w-full max-w-full grid-cols-6 grid-rows-4 gap-1 rounded-lg border-2 border-stone-300 bg-stone-100/80 p-1 transition-[max-height,width,filter] duration-300 ease-out max-md:min-h-0 md:h-auto md:max-h-none md:gap-1.5 md:p-1.5"
       style={{ gridTemplateColumns: `repeat(${GRID_COLS}, minmax(0, 1fr))` }}
     >
       {cells.map(({ key, region }) =>

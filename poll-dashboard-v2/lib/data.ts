@@ -40,7 +40,7 @@ export type Region = {
   name: string;
   shortName: string;
   position: string;
-  /** 6×7 격자 배치 (1-based) */
+  /** 4×6 격자 배치 (1-based, 한반도 대략 위치) */
   row: number;
   col: number;
   note?: string;
