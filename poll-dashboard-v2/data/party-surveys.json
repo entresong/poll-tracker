@@ -1,0 +1,64 @@
+{
+  "_note": "이 파일을 직접 편집해서 데이터를 추가하세요. NESDC(nesdc.go.kr)에서 최신 조사를 가져와 입력합니다.",
+  "_lastUpdated": "2026-05-11",
+  "surveys": [
+    {
+      "id": "gallup-2026-01-3",
+      "agency": "한국갤럽",
+      "client": "자체조사",
+      "startDate": "2026-01-13",
+      "endDate": "2026-01-15",
+      "sampleSize": 1000,
+      "responseRate": 11.9,
+      "marginOfError": 3.1,
+      "method": "CATI",
+      "sourceUrl": "https://www.gallup.co.kr/gallupdb/reportContent.asp?seqNo=1614",
+      "ratings": {
+        "더불어민주당": 41,
+        "국민의힘": 24,
+        "조국혁신당": 4,
+        "개혁신당": 2,
+        "진보당": 1,
+        "무당층": 26
+      }
+    },
+    {
+      "id": "gallup-2026-01-2",
+      "agency": "한국갤럽",
+      "client": "자체조사",
+      "startDate": "2026-01-06",
+      "endDate": "2026-01-08",
+      "sampleSize": 1000,
+      "responseRate": 12.0,
+      "marginOfError": 3.1,
+      "method": "CATI",
+      "ratings": {
+        "더불어민주당": 40,
+        "국민의힘": 25,
+        "조국혁신당": 4,
+        "개혁신당": 2,
+        "진보당": 1,
+        "무당층": 26
+      }
+    },
+    {
+      "id": "realmeter-2026-01-3",
+      "agency": "리얼미터",
+      "client": "에너지경제신문",
+      "startDate": "2026-01-12",
+      "endDate": "2026-01-16",
+      "sampleSize": 2502,
+      "responseRate": 6.5,
+      "marginOfError": 2.0,
+      "method": "ARS",
+      "ratings": {
+        "더불어민주당": 45,
+        "국민의힘": 35,
+        "조국혁신당": 5,
+        "개혁신당": 3,
+        "진보당": 2,
+        "무당층": 8
+      }
+    }
+  ]
+}
