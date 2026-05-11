@@ -9,6 +9,8 @@
       "name": "서울특별시",
       "shortName": "서울",
       "position": "서울시장",
+      "row": 2,
+      "col": 3,
       "surveys": [
         {
           "id": "straight-jowon-seoul-2026-05",
@@ -46,6 +48,8 @@
       "name": "부산광역시",
       "shortName": "부산",
       "position": "부산시장",
+      "row": 5,
+      "col": 6,
       "surveys": [
         {
           "id": "busan-ace-2026-04",
@@ -68,6 +72,8 @@
       "name": "대구광역시",
       "shortName": "대구",
       "position": "대구시장",
+      "row": 4,
+      "col": 5,
       "surveys": [
         {
           "id": "yeoronflower-daegu-2026-04",
@@ -90,6 +96,8 @@
       "name": "인천광역시",
       "shortName": "인천",
       "position": "인천시장",
+      "row": 2,
+      "col": 2,
       "surveys": [
         {
           "id": "segye-gallup-incheon-2026-04",
@@ -112,6 +120,8 @@
       "name": "광주광역시",
       "shortName": "광주",
       "position": "광주시장",
+      "row": 4,
+      "col": 2,
       "status": "candidates_pending",
       "statusMessage": "민주당 후보 결선 진행 중",
       "statusDetail": "민주당 민형배 의원과 김영록 전남지사가 5월 12-14일 결선 투표 예정. 국민의힘은 안태욱·이정현 후보 출마 선언. 2026년 7월 1일 전남광주통합특별시 출범 예정.",
@@ -122,6 +132,8 @@
       "name": "대전광역시",
       "shortName": "대전",
       "position": "대전시장",
+      "row": 3,
+      "col": 2,
       "surveys": [
         {
           "id": "yeoronflower-daejeon-2026-04",
@@ -144,6 +156,8 @@
       "name": "울산광역시",
       "shortName": "울산",
       "position": "울산시장",
+      "row": 4,
+      "col": 7,
       "surveys": [
         {
           "id": "yeoronflower-ulsan-2026-04",
@@ -166,6 +180,8 @@
       "name": "세종특별자치시",
       "shortName": "세종",
       "position": "세종시장",
+      "row": 3,
+      "col": 3,
       "status": "candidates_pending",
       "statusMessage": "민주당 후보 결선 진행 중",
       "statusDetail": "민주당 이춘희 전 시장과 조상호 전 경제부시장 결선 진출. 국민의힘은 최민호 현 시장 단수 공천.",
@@ -176,6 +192,8 @@
       "name": "경기도",
       "shortName": "경기",
       "position": "경기도지사",
+      "row": 2,
+      "col": 4,
       "surveys": [
         {
           "id": "segye-gallup-gyeonggi-2026-04",
@@ -198,6 +216,8 @@
       "name": "강원특별자치도",
       "shortName": "강원",
       "position": "강원도지사",
+      "row": 1,
+      "col": 5,
       "surveys": [
         {
           "id": "gangwon-ace-2026-04",
@@ -220,6 +240,8 @@
       "name": "충청북도",
       "shortName": "충북",
       "position": "충북도지사",
+      "row": 3,
+      "col": 4,
       "status": "candidates_pending",
       "statusMessage": "국민의힘 후보 경선 진행 중",
       "statusDetail": "민주당 신용한 지방시대위원회 부위원장 후보 확정. 국민의힘은 윤희근 전 경찰청장·윤갑근 변호사 예비경선 후 김영환 현 지사와 결선 예정.",
@@ -230,6 +252,8 @@
       "name": "충청남도",
       "shortName": "충남",
       "position": "충남도지사",
+      "row": 3,
+      "col": 1,
       "surveys": [
         {
           "id": "yeoronflower-chungnam-2026-04",
@@ -252,6 +276,8 @@
       "name": "전북특별자치도",
       "shortName": "전북",
       "position": "전북도지사",
+      "row": 4,
+      "col": 1,
       "status": "data_pending",
       "statusMessage": "공표된 조사 없음",
       "statusDetail": "민주당 우세 지역으로 분류되며, 4-5월 중 공표된 양자대결 여론조사가 등록되지 않았습니다. NESDC 등록을 지속 모니터링 중입니다.",
@@ -262,6 +288,8 @@
       "name": "전라남도",
       "shortName": "전남",
       "position": "전남도지사",
+      "row": 4,
+      "col": 3,
       "status": "candidates_pending",
       "statusMessage": "광주 통합 이슈로 후보 확정 지연",
       "statusDetail": "2026년 7월 1일 전남광주통합특별시 출범 예정. 통합 관련 정치 일정에 따라 후보 확정과 여론조사가 지연되고 있습니다.",
@@ -272,6 +300,8 @@
       "name": "경상북도",
       "shortName": "경북",
       "position": "경북도지사",
+      "row": 3,
+      "col": 6,
       "status": "data_pending",
       "statusMessage": "공표된 조사 없음",
       "statusDetail": "국민의힘 우세 지역으로 분류되며, 4-5월 중 공표된 양자대결 여론조사가 등록되지 않았습니다. NESDC 등록을 지속 모니터링 중입니다.",
@@ -282,6 +312,8 @@
       "name": "경상남도",
       "shortName": "경남",
       "position": "경남도지사",
+      "row": 5,
+      "col": 4,
       "surveys": [
         {
           "id": "segye-gallup-gyeongnam-2026-04",
@@ -304,6 +336,8 @@
       "name": "제주특별자치도",
       "shortName": "제주",
       "position": "제주도지사",
+      "row": 6,
+      "col": 3,
       "status": "candidates_pending",
       "statusMessage": "민주당 후보 결선 진행 중",
       "statusDetail": "민주당 위성곤 의원과 문대림 의원 결선 진출. 국민의힘은 문성유 전 기획재정부 기획조정실장 확정.",

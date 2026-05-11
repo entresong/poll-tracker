@@ -40,6 +40,9 @@ export type Region = {
   name: string;
   shortName: string;
   position: string;
+  /** 6×7 격자 배치 (1-based) */
+  row: number;
+  col: number;
   note?: string;
   status?: 'candidates_pending' | 'data_pending';
   statusMessage?: string;

@@ -6,7 +6,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: '2026 지방선거 17개 시도 후보 지지율 한눈에',
   description:
-    '2026년 6월 3일 제9회 전국동시지방선거. 17개 시도 광역단체장 후보별 지지율을 지도에서 한눈에 확인하세요.',
+    '2026년 6월 3일 제9회 전국동시지방선거. 17개 시도 광역단체장 후보별 지지율을 격자에서 한눈에 확인하세요.',
 };
 
 export default function Home() {
@@ -27,7 +27,7 @@ export default function Home() {
             지방선거 광역단체장
           </h1>
           <p className="mt-3 max-w-2xl text-sm text-stone-600 md:text-base">
-            지도에서 지역을 클릭하면 모든 후보의 최신 지지율과 조사 정보를
+            격자에서 지역을 클릭하면 모든 후보의 최신 지지율과 조사 정보를
             확인할 수 있습니다. 색상은 1위 후보의 정당입니다.
           </p>
           <p className="mt-2 text-xs text-stone-500">
