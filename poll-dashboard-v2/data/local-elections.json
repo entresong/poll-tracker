@@ -1,5 +1,5 @@
 {
-  "_note": "17개 시도 광역단체장 + 일부 시군구 기초자치단체장(municipalities). 2026년 4-5월 공표 여론조사 기준",
+  "_note": "17개 시도 광역단체장 + 시군구 기초자치단체장(municipalities), 재보궐 국회의원(byElections). 2026년 4-5월 공표 여론조사 기준",
   "_lastUpdated": "2026-05-11",
   "_electionDate": "2026-06-03",
   "_sources": "한국갤럽-세계일보 4월 조사, 스트레이트뉴스-조원씨앤아이 5월 조사, 부산일보-에이스리서치, 여론조사꽃 등. 자세한 사항은 NESDC(nesdc.go.kr) 참조.",
@@ -23,8 +23,16 @@
           "marginOfError": 3.5,
           "method": "ARS",
           "candidates": [
-            { "name": "정원오", "party": "더불어민주당", "rating": 50.2 },
-            { "name": "오세훈", "party": "국민의힘", "rating": 38.0 }
+            {
+              "name": "정원오",
+              "party": "더불어민주당",
+              "rating": 50.2
+            },
+            {
+              "name": "오세훈",
+              "party": "국민의힘",
+              "rating": 38
+            }
           ]
         },
         {
@@ -37,12 +45,196 @@
           "marginOfError": 3.5,
           "method": "CATI",
           "candidates": [
-            { "name": "정원오", "party": "더불어민주당", "rating": 49.7 },
-            { "name": "오세훈", "party": "국민의힘", "rating": 35.9 }
+            {
+              "name": "정원오",
+              "party": "더불어민주당",
+              "rating": 49.7
+            },
+            {
+              "name": "오세훈",
+              "party": "국민의힘",
+              "rating": 35.9
+            }
           ]
         }
       ],
       "municipalities": [
+        {
+          "code": "seoul-jongno",
+          "name": "종로구",
+          "position": "종로구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "seoul-junggu",
+          "name": "중구",
+          "position": "중구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "seoul-yongsan",
+          "name": "용산구",
+          "position": "용산구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "seoul-seongdong",
+          "name": "성동구",
+          "position": "성동구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "seoul-gwangjin",
+          "name": "광진구",
+          "position": "광진구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "seoul-dongdaemun",
+          "name": "동대문구",
+          "position": "동대문구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "seoul-jungnang",
+          "name": "중랑구",
+          "position": "중랑구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "seoul-seongbuk",
+          "name": "성북구",
+          "position": "성북구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "seoul-gangbuk",
+          "name": "강북구",
+          "position": "강북구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "seoul-dobong",
+          "name": "도봉구",
+          "position": "도봉구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "seoul-nowon",
+          "name": "노원구",
+          "position": "노원구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "seoul-eunpyeong",
+          "name": "은평구",
+          "position": "은평구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "seoul-seodaemun",
+          "name": "서대문구",
+          "position": "서대문구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "seoul-mapo",
+          "name": "마포구",
+          "position": "마포구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "seoul-yangcheon",
+          "name": "양천구",
+          "position": "양천구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "seoul-gangseo",
+          "name": "강서구",
+          "position": "강서구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "seoul-guro",
+          "name": "구로구",
+          "position": "구로구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "seoul-geumcheon",
+          "name": "금천구",
+          "position": "금천구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "seoul-yeongdeungpo",
+          "name": "영등포구",
+          "position": "영등포구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "seoul-dongjak",
+          "name": "동작구",
+          "position": "동작구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "seoul-gwanak",
+          "name": "관악구",
+          "position": "관악구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "seoul-seocho",
+          "name": "서초구",
+          "position": "서초구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
         {
           "code": "seoul-gangnam",
           "name": "강남구",
@@ -60,33 +252,9 @@
           "surveys": []
         },
         {
-          "code": "seoul-seocho",
-          "name": "서초구",
-          "position": "서초구청장",
-          "status": "candidates_pending",
-          "statusMessage": "후보 확정 진행 중",
-          "surveys": []
-        },
-        {
-          "code": "seoul-mapo",
-          "name": "마포구",
-          "position": "마포구청장",
-          "status": "candidates_pending",
-          "statusMessage": "후보 확정 진행 중",
-          "surveys": []
-        },
-        {
-          "code": "seoul-yongsan",
-          "name": "용산구",
-          "position": "용산구청장",
-          "status": "candidates_pending",
-          "statusMessage": "후보 확정 진행 중",
-          "surveys": []
-        },
-        {
-          "code": "seoul-yangcheon",
-          "name": "양천구",
-          "position": "양천구청장",
+          "code": "seoul-gangdong",
+          "name": "강동구",
+          "position": "강동구청장",
           "status": "candidates_pending",
           "statusMessage": "후보 확정 진행 중",
           "surveys": []
@@ -111,12 +279,84 @@
           "marginOfError": 3.5,
           "method": "CATI",
           "candidates": [
-            { "name": "전재수", "party": "더불어민주당", "rating": 48.0 },
-            { "name": "박형준", "party": "국민의힘", "rating": 34.9 }
+            {
+              "name": "전재수",
+              "party": "더불어민주당",
+              "rating": 48
+            },
+            {
+              "name": "박형준",
+              "party": "국민의힘",
+              "rating": 34.9
+            }
           ]
         }
       ],
       "municipalities": [
+        {
+          "code": "busan-junggu",
+          "name": "중구",
+          "position": "중구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "busan-seogu",
+          "name": "서구",
+          "position": "서구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "busan-donggu",
+          "name": "동구",
+          "position": "동구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "busan-yeongdo",
+          "name": "영도구",
+          "position": "영도구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "busan-busanjin",
+          "name": "부산진구",
+          "position": "부산진구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "busan-dongnae",
+          "name": "동래구",
+          "position": "동래구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "busan-namgu",
+          "name": "남구",
+          "position": "남구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "busan-bukgu",
+          "name": "북구",
+          "position": "북구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
         {
           "code": "busan-haeundae",
           "name": "해운대구",
@@ -126,9 +366,57 @@
           "surveys": []
         },
         {
+          "code": "busan-saha",
+          "name": "사하구",
+          "position": "사하구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "busan-geumjeong",
+          "name": "금정구",
+          "position": "금정구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "busan-gangseo",
+          "name": "강서구",
+          "position": "강서구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "busan-yeonje",
+          "name": "연제구",
+          "position": "연제구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
           "code": "busan-suyeong",
           "name": "수영구",
           "position": "수영구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "busan-sasang",
+          "name": "사상구",
+          "position": "사상구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "busan-gijang",
+          "name": "기장군",
+          "position": "기장군수",
           "status": "candidates_pending",
           "statusMessage": "후보 확정 진행 중",
           "surveys": []
@@ -150,15 +438,88 @@
           "startDate": "2026-04-06",
           "endDate": "2026-04-07",
           "sampleSize": 600,
-          "marginOfError": 4.0,
+          "marginOfError": 4,
           "method": "ARS",
           "candidates": [
-            { "name": "김부겸", "party": "더불어민주당", "rating": 50.6 },
-            { "name": "이진숙", "party": "무소속", "rating": 31.7 }
+            {
+              "name": "김부겸",
+              "party": "더불어민주당",
+              "rating": 50.6
+            },
+            {
+              "name": "이진숙",
+              "party": "무소속",
+              "rating": 31.7
+            }
           ]
         }
       ],
-      "municipalities": []
+      "municipalities": [
+        {
+          "code": "daegu-junggu",
+          "name": "중구",
+          "position": "중구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "daegu-donggu",
+          "name": "동구",
+          "position": "동구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "daegu-seogu",
+          "name": "서구",
+          "position": "서구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "daegu-namgu",
+          "name": "남구",
+          "position": "남구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "daegu-bukgu",
+          "name": "북구",
+          "position": "북구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "daegu-suseong",
+          "name": "수성구",
+          "position": "수성구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "daegu-dalseo",
+          "name": "달서구",
+          "position": "달서구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "daegu-dalseong",
+          "name": "달성군",
+          "position": "달성군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        }
+      ]
     },
     {
       "code": "incheon",
@@ -178,12 +539,101 @@
           "marginOfError": 3.5,
           "method": "CATI",
           "candidates": [
-            { "name": "박찬대", "party": "더불어민주당", "rating": 49.0 },
-            { "name": "유정복", "party": "국민의힘", "rating": 33.0 }
+            {
+              "name": "박찬대",
+              "party": "더불어민주당",
+              "rating": 49
+            },
+            {
+              "name": "유정복",
+              "party": "국민의힘",
+              "rating": 33
+            }
           ]
         }
       ],
-      "municipalities": []
+      "municipalities": [
+        {
+          "code": "incheon-junggu",
+          "name": "중구",
+          "position": "중구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "incheon-donggu",
+          "name": "동구",
+          "position": "동구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "incheon-michuhol",
+          "name": "미추홀구",
+          "position": "미추홀구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "incheon-yeonsu",
+          "name": "연수구",
+          "position": "연수구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "incheon-namdong",
+          "name": "남동구",
+          "position": "남동구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "incheon-bupyeong",
+          "name": "부평구",
+          "position": "부평구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "incheon-gyeyang",
+          "name": "계양구",
+          "position": "계양구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "incheon-seogu",
+          "name": "서구",
+          "position": "서구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "incheon-ganghwa",
+          "name": "강화군",
+          "position": "강화군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "incheon-ongjin",
+          "name": "옹진군",
+          "position": "옹진군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        }
+      ]
     },
     {
       "code": "gwangju",
@@ -196,7 +646,48 @@
       "statusMessage": "민주당 후보 결선 진행 중",
       "statusDetail": "민주당 민형배 의원과 김영록 전남지사가 5월 12-14일 결선 투표 예정. 국민의힘은 안태욱·이정현 후보 출마 선언. 2026년 7월 1일 전남광주통합특별시 출범 예정.",
       "surveys": [],
-      "municipalities": []
+      "municipalities": [
+        {
+          "code": "gwangju-donggu",
+          "name": "동구",
+          "position": "동구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gwangju-seogu",
+          "name": "서구",
+          "position": "서구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gwangju-namgu",
+          "name": "남구",
+          "position": "남구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gwangju-bukgu",
+          "name": "북구",
+          "position": "북구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gwangju-gwangsan",
+          "name": "광산구",
+          "position": "광산구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        }
+      ]
     },
     {
       "code": "daejeon",
@@ -213,15 +704,64 @@
           "startDate": "2026-04-08",
           "endDate": "2026-04-09",
           "sampleSize": 600,
-          "marginOfError": 4.0,
+          "marginOfError": 4,
           "method": "ARS",
           "candidates": [
-            { "name": "허태정", "party": "더불어민주당", "rating": 54.9 },
-            { "name": "이장우", "party": "국민의힘", "rating": 23.5 }
+            {
+              "name": "허태정",
+              "party": "더불어민주당",
+              "rating": 54.9
+            },
+            {
+              "name": "이장우",
+              "party": "국민의힘",
+              "rating": 23.5
+            }
           ]
         }
       ],
-      "municipalities": []
+      "municipalities": [
+        {
+          "code": "daejeon-donggu",
+          "name": "동구",
+          "position": "동구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "daejeon-junggu",
+          "name": "중구",
+          "position": "중구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "daejeon-seogu",
+          "name": "서구",
+          "position": "서구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "daejeon-yuseong",
+          "name": "유성구",
+          "position": "유성구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "daejeon-daedeok",
+          "name": "대덕구",
+          "position": "대덕구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        }
+      ]
     },
     {
       "code": "ulsan",
@@ -238,15 +778,64 @@
           "startDate": "2026-04-08",
           "endDate": "2026-04-09",
           "sampleSize": 600,
-          "marginOfError": 4.0,
+          "marginOfError": 4,
           "method": "ARS",
           "candidates": [
-            { "name": "김상욱", "party": "더불어민주당", "rating": 47.0 },
-            { "name": "김두겸", "party": "국민의힘", "rating": 34.9 }
+            {
+              "name": "김상욱",
+              "party": "더불어민주당",
+              "rating": 47
+            },
+            {
+              "name": "김두겸",
+              "party": "국민의힘",
+              "rating": 34.9
+            }
           ]
         }
       ],
-      "municipalities": []
+      "municipalities": [
+        {
+          "code": "ulsan-junggu",
+          "name": "중구",
+          "position": "중구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "ulsan-namgu",
+          "name": "남구",
+          "position": "남구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "ulsan-donggu",
+          "name": "동구",
+          "position": "동구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "ulsan-bukgu",
+          "name": "북구",
+          "position": "북구청장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "ulsan-ulju",
+          "name": "울주군",
+          "position": "울주군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        }
+      ]
     },
     {
       "code": "sejong",
@@ -279,8 +868,16 @@
           "marginOfError": 3.5,
           "method": "CATI",
           "candidates": [
-            { "name": "추미애", "party": "더불어민주당", "rating": 56.0 },
-            { "name": "양향자", "party": "국민의힘", "rating": 27.0 }
+            {
+              "name": "추미애",
+              "party": "더불어민주당",
+              "rating": 56
+            },
+            {
+              "name": "양향자",
+              "party": "국민의힘",
+              "rating": 27
+            }
           ]
         }
       ],
@@ -294,14 +891,6 @@
           "surveys": []
         },
         {
-          "code": "gyeonggi-yongin",
-          "name": "용인시",
-          "position": "용인시장",
-          "status": "candidates_pending",
-          "statusMessage": "후보 확정 진행 중",
-          "surveys": []
-        },
-        {
           "code": "gyeonggi-seongnam",
           "name": "성남시",
           "position": "성남시장",
@@ -310,9 +899,233 @@
           "surveys": []
         },
         {
+          "code": "gyeonggi-uijeongbu",
+          "name": "의정부시",
+          "position": "의정부시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeonggi-anyang",
+          "name": "안양시",
+          "position": "안양시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeonggi-bucheon",
+          "name": "부천시",
+          "position": "부천시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeonggi-gwangmyeong",
+          "name": "광명시",
+          "position": "광명시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeonggi-pyeongtaek",
+          "name": "평택시",
+          "position": "평택시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeonggi-dongducheon",
+          "name": "동두천시",
+          "position": "동두천시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeonggi-ansan",
+          "name": "안산시",
+          "position": "안산시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeonggi-goyang",
+          "name": "고양시",
+          "position": "고양시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeonggi-gwacheon",
+          "name": "과천시",
+          "position": "과천시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeonggi-guri",
+          "name": "구리시",
+          "position": "구리시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeonggi-namyangju",
+          "name": "남양주시",
+          "position": "남양주시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeonggi-osan",
+          "name": "오산시",
+          "position": "오산시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeonggi-siheung",
+          "name": "시흥시",
+          "position": "시흥시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeonggi-gunpo",
+          "name": "군포시",
+          "position": "군포시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeonggi-uiwang",
+          "name": "의왕시",
+          "position": "의왕시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeonggi-hanam",
+          "name": "하남시",
+          "position": "하남시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeonggi-yongin",
+          "name": "용인시",
+          "position": "용인시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeonggi-paju",
+          "name": "파주시",
+          "position": "파주시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeonggi-icheon",
+          "name": "이천시",
+          "position": "이천시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeonggi-anseong",
+          "name": "안성시",
+          "position": "안성시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeonggi-gimpo",
+          "name": "김포시",
+          "position": "김포시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
           "code": "gyeonggi-hwaseong",
           "name": "화성시",
           "position": "화성시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeonggi-gwangju",
+          "name": "광주시",
+          "position": "광주시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeonggi-yangju",
+          "name": "양주시",
+          "position": "양주시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeonggi-pocheon",
+          "name": "포천시",
+          "position": "포천시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeonggi-yeoju",
+          "name": "여주시",
+          "position": "여주시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeonggi-yeoncheon",
+          "name": "연천군",
+          "position": "연천군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeonggi-gapyeong",
+          "name": "가평군",
+          "position": "가평군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeonggi-yangpyeong",
+          "name": "양평군",
+          "position": "양평군수",
           "status": "candidates_pending",
           "statusMessage": "후보 확정 진행 중",
           "surveys": []
@@ -337,12 +1150,165 @@
           "marginOfError": 3.5,
           "method": "CATI",
           "candidates": [
-            { "name": "우상호", "party": "더불어민주당", "rating": 51.2 },
-            { "name": "김진태", "party": "국민의힘", "rating": 37.3 }
+            {
+              "name": "우상호",
+              "party": "더불어민주당",
+              "rating": 51.2
+            },
+            {
+              "name": "김진태",
+              "party": "국민의힘",
+              "rating": 37.3
+            }
           ]
         }
       ],
-      "municipalities": []
+      "municipalities": [
+        {
+          "code": "gangwon-chuncheon",
+          "name": "춘천시",
+          "position": "춘천시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gangwon-wonju",
+          "name": "원주시",
+          "position": "원주시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gangwon-gangneung",
+          "name": "강릉시",
+          "position": "강릉시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gangwon-donghae",
+          "name": "동해시",
+          "position": "동해시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gangwon-taebaek",
+          "name": "태백시",
+          "position": "태백시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gangwon-sokcho",
+          "name": "속초시",
+          "position": "속초시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gangwon-samcheok",
+          "name": "삼척시",
+          "position": "삼척시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gangwon-hongcheon",
+          "name": "홍천군",
+          "position": "홍천군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gangwon-hoengseong",
+          "name": "횡성군",
+          "position": "횡성군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gangwon-yeongwol",
+          "name": "영월군",
+          "position": "영월군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gangwon-pyeongchang",
+          "name": "평창군",
+          "position": "평창군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gangwon-jeongseon",
+          "name": "정선군",
+          "position": "정선군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gangwon-cheolwon",
+          "name": "철원군",
+          "position": "철원군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gangwon-hwacheon",
+          "name": "화천군",
+          "position": "화천군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gangwon-yanggu",
+          "name": "양구군",
+          "position": "양구군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gangwon-inje",
+          "name": "인제군",
+          "position": "인제군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gangwon-gosung",
+          "name": "고성군",
+          "position": "고성군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gangwon-yangyang",
+          "name": "양양군",
+          "position": "양양군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        }
+      ]
     },
     {
       "code": "chungbuk",
@@ -355,7 +1321,96 @@
       "statusMessage": "국민의힘 후보 경선 진행 중",
       "statusDetail": "민주당 신용한 지방시대위원회 부위원장 후보 확정. 국민의힘은 윤희근 전 경찰청장·윤갑근 변호사 예비경선 후 김영환 현 지사와 결선 예정.",
       "surveys": [],
-      "municipalities": []
+      "municipalities": [
+        {
+          "code": "chungbuk-cheongju",
+          "name": "청주시",
+          "position": "청주시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "chungbuk-chungju",
+          "name": "충주시",
+          "position": "충주시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "chungbuk-jecheon",
+          "name": "제천시",
+          "position": "제천시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "chungbuk-boeun",
+          "name": "보은군",
+          "position": "보은군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "chungbuk-okcheon",
+          "name": "옥천군",
+          "position": "옥천군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "chungbuk-yeongdong",
+          "name": "영동군",
+          "position": "영동군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "chungbuk-jeungpyeong",
+          "name": "증평군",
+          "position": "증평군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "chungbuk-jincheon",
+          "name": "진천군",
+          "position": "진천군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "chungbuk-goesan",
+          "name": "괴산군",
+          "position": "괴산군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "chungbuk-eumseong",
+          "name": "음성군",
+          "position": "음성군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "chungbuk-danyang",
+          "name": "단양군",
+          "position": "단양군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        }
+      ]
     },
     {
       "code": "chungnam",
@@ -372,15 +1427,144 @@
           "startDate": "2026-04-08",
           "endDate": "2026-04-09",
           "sampleSize": 600,
-          "marginOfError": 4.0,
+          "marginOfError": 4,
           "method": "ARS",
           "candidates": [
-            { "name": "박수현", "party": "더불어민주당", "rating": 50.0 },
-            { "name": "김태흠", "party": "국민의힘", "rating": 30.9 }
+            {
+              "name": "박수현",
+              "party": "더불어민주당",
+              "rating": 50
+            },
+            {
+              "name": "김태흠",
+              "party": "국민의힘",
+              "rating": 30.9
+            }
           ]
         }
       ],
-      "municipalities": []
+      "municipalities": [
+        {
+          "code": "chungnam-cheonan",
+          "name": "천안시",
+          "position": "천안시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "chungnam-gongju",
+          "name": "공주시",
+          "position": "공주시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "chungnam-boryeong",
+          "name": "보령시",
+          "position": "보령시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "chungnam-asan",
+          "name": "아산시",
+          "position": "아산시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "chungnam-seosan",
+          "name": "서산시",
+          "position": "서산시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "chungnam-nonsan",
+          "name": "논산시",
+          "position": "논산시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "chungnam-gyeryong",
+          "name": "계룡시",
+          "position": "계룡시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "chungnam-dangjin",
+          "name": "당진시",
+          "position": "당진시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "chungnam-geumsan",
+          "name": "금산군",
+          "position": "금산군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "chungnam-buyeo",
+          "name": "부여군",
+          "position": "부여군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "chungnam-seocheon",
+          "name": "서천군",
+          "position": "서천군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "chungnam-cheongyang",
+          "name": "청양군",
+          "position": "청양군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "chungnam-hongseong",
+          "name": "홍성군",
+          "position": "홍성군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "chungnam-yesan",
+          "name": "예산군",
+          "position": "예산군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "chungnam-taean",
+          "name": "태안군",
+          "position": "태안군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        }
+      ]
     },
     {
       "code": "jeonbuk",
@@ -393,7 +1577,120 @@
       "statusMessage": "공표된 조사 없음",
       "statusDetail": "민주당 우세 지역으로 분류되며, 4-5월 중 공표된 양자대결 여론조사가 등록되지 않았습니다. NESDC 등록을 지속 모니터링 중입니다.",
       "surveys": [],
-      "municipalities": []
+      "municipalities": [
+        {
+          "code": "jeonbuk-jeonju",
+          "name": "전주시",
+          "position": "전주시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "jeonbuk-gunsan",
+          "name": "군산시",
+          "position": "군산시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "jeonbuk-iksan",
+          "name": "익산시",
+          "position": "익산시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "jeonbuk-jeongeup",
+          "name": "정읍시",
+          "position": "정읍시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "jeonbuk-namwon",
+          "name": "남원시",
+          "position": "남원시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "jeonbuk-gimje",
+          "name": "김제시",
+          "position": "김제시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "jeonbuk-wanju",
+          "name": "완주군",
+          "position": "완주군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "jeonbuk-jinan",
+          "name": "진안군",
+          "position": "진안군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "jeonbuk-muju",
+          "name": "무주군",
+          "position": "무주군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "jeonbuk-jangsu",
+          "name": "장수군",
+          "position": "장수군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "jeonbuk-imsil",
+          "name": "임실군",
+          "position": "임실군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "jeonbuk-sunchang",
+          "name": "순창군",
+          "position": "순창군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "jeonbuk-gochang",
+          "name": "고창군",
+          "position": "고창군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "jeonbuk-buan",
+          "name": "부안군",
+          "position": "부안군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        }
+      ]
     },
     {
       "code": "jeonnam",
@@ -406,7 +1703,184 @@
       "statusMessage": "광주 통합 이슈로 후보 확정 지연",
       "statusDetail": "2026년 7월 1일 전남광주통합특별시 출범 예정. 통합 관련 정치 일정에 따라 후보 확정과 여론조사가 지연되고 있습니다.",
       "surveys": [],
-      "municipalities": []
+      "municipalities": [
+        {
+          "code": "jeonnam-mokpo",
+          "name": "목포시",
+          "position": "목포시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "jeonnam-yeosu",
+          "name": "여수시",
+          "position": "여수시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "jeonnam-suncheon",
+          "name": "순천시",
+          "position": "순천시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "jeonnam-naju",
+          "name": "나주시",
+          "position": "나주시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "jeonnam-gwangyang",
+          "name": "광양시",
+          "position": "광양시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "jeonnam-damyang",
+          "name": "담양군",
+          "position": "담양군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "jeonnam-gokseong",
+          "name": "곡성군",
+          "position": "곡성군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "jeonnam-gurye",
+          "name": "구례군",
+          "position": "구례군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "jeonnam-goheung",
+          "name": "고흥군",
+          "position": "고흥군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "jeonnam-boseong",
+          "name": "보성군",
+          "position": "보성군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "jeonnam-hwasun",
+          "name": "화순군",
+          "position": "화순군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "jeonnam-jangheung",
+          "name": "장흥군",
+          "position": "장흥군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "jeonnam-gangjin",
+          "name": "강진군",
+          "position": "강진군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "jeonnam-haenam",
+          "name": "해남군",
+          "position": "해남군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "jeonnam-yeongam",
+          "name": "영암군",
+          "position": "영암군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "jeonnam-muan",
+          "name": "무안군",
+          "position": "무안군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "jeonnam-hampyeong",
+          "name": "함평군",
+          "position": "함평군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "jeonnam-yeonggwang",
+          "name": "영광군",
+          "position": "영광군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "jeonnam-jangseong",
+          "name": "장성군",
+          "position": "장성군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "jeonnam-wando",
+          "name": "완도군",
+          "position": "완도군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "jeonnam-jindo",
+          "name": "진도군",
+          "position": "진도군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "jeonnam-sinan",
+          "name": "신안군",
+          "position": "신안군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        }
+      ]
     },
     {
       "code": "gyeongbuk",
@@ -419,7 +1893,192 @@
       "statusMessage": "공표된 조사 없음",
       "statusDetail": "국민의힘 우세 지역으로 분류되며, 4-5월 중 공표된 양자대결 여론조사가 등록되지 않았습니다. NESDC 등록을 지속 모니터링 중입니다.",
       "surveys": [],
-      "municipalities": []
+      "municipalities": [
+        {
+          "code": "gyeongbuk-pohang",
+          "name": "포항시",
+          "position": "포항시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeongbuk-gyeongju",
+          "name": "경주시",
+          "position": "경주시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeongbuk-gimcheon",
+          "name": "김천시",
+          "position": "김천시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeongbuk-andong",
+          "name": "안동시",
+          "position": "안동시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeongbuk-gumi",
+          "name": "구미시",
+          "position": "구미시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeongbuk-yeongju",
+          "name": "영주시",
+          "position": "영주시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeongbuk-yeongcheon",
+          "name": "영천시",
+          "position": "영천시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeongbuk-sangju",
+          "name": "상주시",
+          "position": "상주시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeongbuk-mungyeong",
+          "name": "문경시",
+          "position": "문경시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeongbuk-gyeongsan",
+          "name": "경산시",
+          "position": "경산시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeongbuk-gunwi",
+          "name": "군위군",
+          "position": "군위군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeongbuk-uiseong",
+          "name": "의성군",
+          "position": "의성군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeongbuk-cheongsong",
+          "name": "청송군",
+          "position": "청송군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeongbuk-yeongyang",
+          "name": "영양군",
+          "position": "영양군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeongbuk-yeongdeok",
+          "name": "영덕군",
+          "position": "영덕군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeongbuk-cheongdo",
+          "name": "청도군",
+          "position": "청도군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeongbuk-goryeong",
+          "name": "고령군",
+          "position": "고령군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeongbuk-seongju",
+          "name": "성주군",
+          "position": "성주군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeongbuk-chilgok",
+          "name": "칠곡군",
+          "position": "칠곡군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeongbuk-yecheon",
+          "name": "예천군",
+          "position": "예천군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeongbuk-bonghwa",
+          "name": "봉화군",
+          "position": "봉화군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeongbuk-uljin",
+          "name": "울진군",
+          "position": "울진군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeongbuk-ulleung",
+          "name": "울릉군",
+          "position": "울릉군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        }
+      ]
     },
     {
       "code": "gyeongnam",
@@ -439,12 +2098,165 @@
           "marginOfError": 3.5,
           "method": "CATI",
           "candidates": [
-            { "name": "김경수", "party": "더불어민주당", "rating": 44.0 },
-            { "name": "박완수", "party": "국민의힘", "rating": 40.0 }
+            {
+              "name": "김경수",
+              "party": "더불어민주당",
+              "rating": 44
+            },
+            {
+              "name": "박완수",
+              "party": "국민의힘",
+              "rating": 40
+            }
           ]
         }
       ],
-      "municipalities": []
+      "municipalities": [
+        {
+          "code": "gyeongnam-changwon",
+          "name": "창원시",
+          "position": "창원시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeongnam-jinju",
+          "name": "진주시",
+          "position": "진주시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeongnam-tongyeong",
+          "name": "통영시",
+          "position": "통영시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeongnam-sacheon",
+          "name": "사천시",
+          "position": "사천시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeongnam-gimhae",
+          "name": "김해시",
+          "position": "김해시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeongnam-miryang",
+          "name": "밀양시",
+          "position": "밀양시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeongnam-geoje",
+          "name": "거제시",
+          "position": "거제시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeongnam-yangsan",
+          "name": "양산시",
+          "position": "양산시장",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeongnam-uiryeong",
+          "name": "의령군",
+          "position": "의령군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeongnam-haman",
+          "name": "함안군",
+          "position": "함안군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeongnam-changnyeong",
+          "name": "창녕군",
+          "position": "창녕군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeongnam-goseong",
+          "name": "고성군",
+          "position": "고성군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeongnam-namhae",
+          "name": "남해군",
+          "position": "남해군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeongnam-hadong",
+          "name": "하동군",
+          "position": "하동군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeongnam-sancheong",
+          "name": "산청군",
+          "position": "산청군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeongnam-hamyang",
+          "name": "함양군",
+          "position": "함양군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeongnam-geochang",
+          "name": "거창군",
+          "position": "거창군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        },
+        {
+          "code": "gyeongnam-hapcheon",
+          "name": "합천군",
+          "position": "합천군수",
+          "status": "candidates_pending",
+          "statusMessage": "후보 확정 진행 중",
+          "surveys": []
+        }
+      ]
     },
     {
       "code": "jeju",
@@ -458,6 +2270,36 @@
       "statusDetail": "민주당 위성곤 의원과 문대림 의원 결선 진출. 국민의힘은 문성유 전 기획재정부 기획조정실장 확정.",
       "surveys": [],
       "municipalities": []
+    }
+  ],
+  "byElections": [
+    {
+      "code": "incheon-gyeyang-b",
+      "region": "incheon",
+      "position": "인천 계양구 을 국회의원",
+      "status": "candidates_pending",
+      "statusMessage": "후보 확정 진행 중"
+    },
+    {
+      "code": "gyeonggi-ansan-a",
+      "region": "gyeonggi",
+      "position": "경기 안산시 갑 국회의원",
+      "status": "candidates_pending",
+      "statusMessage": "후보 확정 진행 중"
+    },
+    {
+      "code": "gyeonggi-hanam-a",
+      "region": "gyeonggi",
+      "position": "경기 하남시 갑 국회의원",
+      "status": "candidates_pending",
+      "statusMessage": "후보 확정 진행 중"
+    },
+    {
+      "code": "chungnam-asan-b",
+      "region": "chungnam",
+      "position": "충남 아산시 을 국회의원",
+      "status": "candidates_pending",
+      "statusMessage": "후보 확정 진행 중"
     }
   ]
 }

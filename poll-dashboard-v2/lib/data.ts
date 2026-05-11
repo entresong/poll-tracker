@@ -63,6 +63,15 @@ export type Region = {
   municipalities: Municipality[];
 };
 
+/** 6·3 재보궐선거 등 국회의원 보궐선거 단위 (local-elections.json byElections) */
+export type ByElection = {
+  code: string;
+  region: string;
+  position: string;
+  status: 'candidates_pending' | 'data_pending';
+  statusMessage: string;
+};
+
 export const PARTY_COLORS: Record<string, string> = {
   더불어민주당: '#004EA2',
   국민의힘: '#E61E2B',
@@ -80,6 +89,11 @@ export function getPartySurveys(): PartySurvey[] {
 
 export function getRegions(): Region[] {
   return localElections.regions as Region[];
+}
+
+export function getByElections(): ByElection[] {
+  const raw = localElections as { byElections?: ByElection[] };
+  return raw.byElections ?? [];
 }
 
 export function getRegion(code: string): Region | undefined {
